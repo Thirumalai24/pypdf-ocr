@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "e1c3c66e-a7bf-4fec-92f3-e9bff6679344",
+		"name": "Superbill_Processor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36917600"
+	},
+	"item": [
+		{
+			"name": "/extract-pdf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Reimbursify-SuperBill$$",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Superbill-ocr-pdf/OCR-SERVICE/pypdf/receipt (38).pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/extract-pdf",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"extract-pdf"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
