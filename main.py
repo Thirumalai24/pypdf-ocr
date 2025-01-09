@@ -12,13 +12,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://dev-practitioner.reimbursify.com",
-        "https://qa-practitioner.reimbursify.com",
-        "https://staging-practitioner.reimbursify.com",
-        "https://practitioner.reimbursify.com"
-        ],  # This allows all origins
+    allow_origins=["*"],  # This allows all origins
     allow_credentials=True,
     allow_methods=["*"],  # This allows all HTTP methods
     allow_headers=["*"],  # This allows all headers
