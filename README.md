@@ -75,6 +75,8 @@ x-api-key: YOUR_SECRET_KEY
 
 [@/path/to/your/file.pdf]
 ```
+##Sample pdf
+[receipt (1).pdf](https://github.com/user-attachments/files/18357744/receipt.1.pdf)
 
 ### Response 
 ```sh
@@ -169,4 +171,6 @@ x-api-key: YOUR_SECRET_KEY
   "totalPaid": "$1,500.00"
 }
 ```
+
+
 
